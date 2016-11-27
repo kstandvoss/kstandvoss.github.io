@@ -8,6 +8,10 @@ var viewModel = function faqViewModel() {
     self.topics = ko.observableArray(['sleep-template','exercise-template','memory-template']);
     self.currentPage = ko.observable(self.topics()[0]);
 
+    self.changeCurrent = function(index){
+        self.currentPage(self.topics()[index]);
+    };
+
 };
 
 

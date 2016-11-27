@@ -38,7 +38,7 @@
     <h3>Exercise!</h3>
 </script>
 
-<script type="text/html" id="memorize-template">
+<script type="text/html" id="memory-template">
     <h3>That is how you can remember better</h3>
 </script>
 
@@ -49,7 +49,9 @@
 </div>
 
 <div class="ui-layout-west">
+    <h2>Topics</h2>
     <div data-bind="foreach: topics">
-
+        <li style="list-style: none; border-radius: 25px; padding: 5px; border: solid grey; cursor: hand" data-bind="text: $data, click: function(data, event) { changeCurrent($index())}, style: {background-color: currentPage() == $index() ? 'red' : None"></li>
+        <br>
     </div>
 </div>

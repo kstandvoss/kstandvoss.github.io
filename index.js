@@ -5,10 +5,10 @@
 var viewModel = function AppViewModel() {
     var self = this;
 
-    self.items = ko.observableArray(['Study x','Buy bla','Try y']);
+    self.items = ko.observableArray(['Math test','Learn french','Go to gym']);
 
     self.addItem = function() {
-        self.items.push('Test');
+        $( "#dialog" ).dialog();
     };
 
     self.removeItem = function() {

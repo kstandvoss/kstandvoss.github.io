@@ -9,6 +9,7 @@
     <script type="text/javascript" src="bower_components/fullcalendar/dist/fullcalendar.js"></script>
     <script type="text/javascript" src="bower_components/fullcalendar/dist/gcal.js"></script>
     <script type="text/javascript" src="bower_components/knockout/dist/knockout.js"></script>
+    <script type="text/javascript" src="bower_components/knockout-jqueryui/dist/knockout-jqueryui.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="bower_components/jquery-ui-layout/source/stable/layout-default.css">
     <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.css">
@@ -44,6 +45,9 @@
     </div>
 </div>
 
+<div id="dialog" title="Basic dialog">
+    <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
 
 <div class="ui-layout-center">
     <h1 style="text-align: center">Smart Schedule</h1>
@@ -53,14 +57,14 @@
 </div>
 
 <div class="ui-layout-east">
-    <h2>TODO:</h2>
+    <h2>Learning Goals</h2>
     <hr>
     <div data-bind="foreach: items">
         <ul>
             <li data-bind="text: $data"></li>
         </ul>
     </div>
-    <button data-bind="click: addItem">Add</button>
+    <button data-bind="click: addItem">Add a Learning Goal</button>
 </div>
 
 </body>
